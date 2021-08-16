@@ -22,13 +22,16 @@ module.exports = {
               },
             },
           },
-	  {
-		test: /\.css$/,
-		use: [
-		  MiniCssExtractPlugin.loader,
-		  'css-loader',
-		],
-	  },
+	 
+		  {
+            test: /\.(sa|sc|c)ss$/,
+            use: [
+                'style-loader',
+                MiniCssExtractPlugin.loader,
+                'css-loader',
+                'sass-loader',
+            ],
+        },
      
 	  {
 		test: /\.(svg|gif|png|eot|woff|ttf)$/,
