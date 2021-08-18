@@ -1,4 +1,4 @@
-# How to bundle a simple static site with Webpack
+#Simple Static page bundling with Webpack
 
 
 
